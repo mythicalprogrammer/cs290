@@ -1,0 +1,31 @@
+A few notes about code examples:
+
+1.  This is my own personal coding style, based on 20-years of C++
+programming.  I am not advocating it for you, but it's the style I feel
+most comfortable with.
+
+2.  This code was written to be self-contained and therefore it sacrifices 
+a number of good coding practices to do so:
+	A.  It is all in one file.
+	B.  Method definitions are given in the class definition.
+	C.  I use "using namespace std" judiciously.
+	D.  Each file tries to illustrate some particular concept (or set of
+		concepts) and therefore skips a number of points that you'd 
+		probably want in a full system.
+
+3.  I do not advocate any of this code for production systems.  I have
+	often skipped methods that would be need for the full system but have
+	no bearing on the example at hand.  Where these are perhaps non-obvious,
+	I have tried to place comments, but what is obvious to one person may
+	not be for another. (This is related to point 2D, above.)
+
+4.  I am using gcc 4.6.1 for these examples.  As far as I know these examples
+	are valid under the C++11 standard and do not depend on any peculiarities
+	of gcc's implementation.  gcc 4.7 was just released and it has an almost
+	complete implementation of the C++11 standard.  I am less aware of
+	Visual Studio's compliance with C++11 (or other compilers).  clang
+	has good support, I know (for instance it has reg-ex where gcc doesn't
+	yet).
+
+	To compile with C++11 support under gcc 4.6 use the "-std=c++0x" option.
+	To compile with C++11 support under gcc >=4.7 use "-std=c++11".
